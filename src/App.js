@@ -48,7 +48,8 @@ function App() {
   }
   return (
     <div className="App">
-      <img className="image" alt="logo" src="https://scontent.fbho2-1.fna.fbcdn.net/v/t1.6435-9/121144316_4235843479868633_1561909311908486242_n.png?_nc_cat=1&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=DJn7f9y0xvEAX8qgceJ&_nc_ht=scontent.fbho2-1.fna&oh=750880fe05c9d8990b1d5580b75db841&oe=61BCAA42" />
+      <img className="image" alt="logo" 
+    src="https://png.pngtree.com/element_our/png/20181229/vector-chat-icon-png_302635.jpg" />
       <h1>Facebook Messenger</h1>
       <h2>Welcome {username}</h2>
       <form className="app__form">

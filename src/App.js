@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <img className="image" alt="logo" 
-    src="https://png.pngtree.com/element_our/png/20181229/vector-chat-icon-png_302635.jpg" />
+    src="https://freepngimg.com/download/chat/97434-logo-pic-chat-free-transparent-image-hq.png" />
       <h1>Facebook Messenger</h1>
       <h2>Welcome {username}</h2>
       <form className="app__form">

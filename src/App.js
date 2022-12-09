@@ -50,7 +50,7 @@ function App() {
     <div className="App">
       <img className="image" alt="logo" 
     src="https://freepngimg.com/download/chat/97434-logo-pic-chat-free-transparent-image-hq.png" />
-      <h1>Facebook Messenger</h1>
+      <h1>WhatsBook Community Messenger</h1>
       <h2>Welcome {username}</h2>
       <form className="app__form">
         <FormControl className="app__formControl">

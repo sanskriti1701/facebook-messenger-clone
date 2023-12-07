@@ -8,15 +8,10 @@ import firebase from 'firebase';
 import FlipMove from 'react-flip-move';
 import SendIcon from '@mui/icons-material/Send';
 import { IconButton } from '@mui/material';
-
-
-
 function App() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState('');
-
-
   useEffect(() => {
     // run once app content loads
     db.collection('messages')
@@ -26,8 +21,6 @@ function App() {
 
       });
   }, [])
-
-
 
   useEffect(() => {
     setUsername(prompt('Please enter your name'))
@@ -56,34 +49,19 @@ function App() {
         <FormControl className="app__formControl">
           <InputLabel>Enter a message..</InputLabel>
           <Input className="app__input" value={input} onChange={event => setInput(event.target.value)} />
-
-
           <IconButton className="app__formControl" disabled={!input} variant="contained" color="primary" onClick={sendMessage}>
-
             <SendIcon />
-
           </IconButton>
-
-
-
-
-
-
         </FormControl>
       </form>
-
-
       <FlipMove>
-
         {
           messages.map(({ id, message }) => (
             <Message key={id} username={username} message={message} />
-
           ))
         }
       </FlipMove>
     </div>
   );
 }
-
 export default App;
